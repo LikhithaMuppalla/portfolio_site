@@ -6,5 +6,5 @@ Example of portifolio site
 Likhitha Muppalla
 # How to run
 daniel.html - main file
-run this file in chrome
+Run this file in chrome
 
