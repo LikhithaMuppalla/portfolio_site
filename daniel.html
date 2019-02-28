@@ -1,0 +1,135 @@
+<html>
+<head>
+ <meta charset="utf-8">
+<title>PortFolio WebSite</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+<header>
+<h1>Turist Places</h1>
+</header>
+<div class="topnav">
+  <h2><b>Turist Places</b></h2>
+<p><i>Travelling shouldn't be just a tour, it should be a tale</i></p>  
+</div>
+<div class="row">
+  <div class="column"> 
+<div class="content">
+<img src="https://cdn.pixabay.com/photo/2017/05/13/16/17/taj-mahal-2309923_960_720.jpg", alt="Tajmahal"  style="width:100%">
+<h6><i>TajMahal</i></h6>
+<p>Every year Agra receives millions of visitor around the globe just to see the symbol of love, Taj Mahal.
+ Agra has a spectacular history of Mughals and finest architecture all across the world.</p>
+</div>
+</div>
+<div class="column"> 
+<div class="content">
+<img src="https://www.yatramantra.com/kerala/wp-content/uploads/sites/2/2015/11/Valparai-816x544.jpg", alt="Tajmahal"  style="width:100%">
+<h6><i> Valparai </i></h6>
+<p>The heavenly land is situated in the Coimbatore district of Tamilnadu State with an altitude  of 3500 feet above the sea level. 
+It stands majestically with Green Spread Mountains and forest all around. </p>
+</div>
+</div>
+<div class="column"> 
+<div class="content">
+<img src="https://dt4c7w85dei08.cloudfront.net/uploads/bootsy/image/53/munnar.jpg", alt="Tajmahal" style="width:100%">
+<h6><i>Tea Gardens</i></h6>
+<p>Munnar is a most exotic destination in India moreover houseboat experience in backwaters makes it exceptional.
+ No travel in India is complete without visiting god' own country Kerala</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="content">
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="https://www.yatramantra.com/kerala/wp-content/uploads/sites/2/2015/11/Aliyar-Dam-e1446975448949.jpg">
+  <img class="mySlides" src="http://3.bp.blogspot.com/-ZIpe-JJHEH8/VtGajQleU2I/AAAAAAAADDA/VUJh0Hi_q-g/s1600/Garadia-Mahadev-Temple-Kota.jpg">
+  <img class="mySlides" src="https://image3.mouthshut.com/images/imagesp/925036779s.jpg">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
+</div>
+<div class="row">
+  <div class="column"> 
+<div class="content">
+<img src="https://www.groundzeroweb.com/wp-content/uploads/2016/11/Gateway-of-India.jpg", alt="Tajmahal"  style="width:100%">
+<h6><i>Gateway-of-India</i></h6>
+<p>The Gateway of India is the place where the Viceroys and Governers used to land upon their arrival in India during the British Era.
+ The monument was built in Indo-Saracenic style during the 20th century in Mumbai, Maharashtra. </p>
+</div>
+</div>
+<div class="column"> 
+<div class="content">
+<img src="https://www.groundzeroweb.com/wp-content/uploads/2016/11/Red-Fort.jpg", alt="Tajmahal"  style="width:100%">
+<h6><i> Red-Fort </i></h6>
+<p>The Red Fort is the largest monument in Delhi and is also one of its most popular tourist destinations attracting thousands of visitors every year.
+ It was the residence of the Mughal emperor for nearly 200 years. </p>
+</div>
+</div>
+<div class="column"> 
+<div class="content">
+<img src="https://www.groundzeroweb.com/wp-content/uploads/2016/11/Qutub-Minar.jpg", alt="Tajmahal" style="width:100%">
+<h6><i>Qutub-Minar</i></h6>
+<p>Next on our list of famous of tourist places in India is a soaring, 73 m-high tower of victory, Qutb Minar. 
+The tower is not only one of the finest monuments in India but also in the world.</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="content">
+<div class="w3-content w3-display-container">
+  <img class="Slides" src="http://royalleisuretours.com/wp-content/uploads/2016/02/Tourist-places-in-Goa-768x485.jpg" style="width:100%">
+  <img class="Slides" src="https://www.holidify.com/blog/wp-content/uploads/2014/06/hampi.jpg" style="width:100%">
+  <img class="Slides" src="https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2015/08/Rashtrapati-Bhavan.jpg" style="width:100%">
+  <img class="Slides" src="https://www.holidify.com/blog/wp-content/uploads/2014/06/allepey-backwaters.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("Slides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+  
+</div>
+</div>
+<footer>
+<img class="imogi" src="https://imgc.allpostersimages.com/img/print/posters/detlev-van-ravenswaay-smiley-face-symbol_a-G-10221544-4990091.jpg", alt="imogi" width="115px" style="border-radius:50%">
+<p><b>Thanq for wisiting this site...</b></p>
+</footer>
+</div>
+</body>
+</html>
